@@ -1,0 +1,302 @@
+/**************************
+    Global Layout
+**************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Mukta Mahee', sans-serif;
+  color: #6FB6AD;
+  background: #00081C;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  margin: 10px;
+  padding: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav li {
+  text-transform: uppercase;
+}
+
+/* Link Style*/
+
+a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #6FB6AD;
+  transition: all .5s;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+a:visited {
+  color: #ccc;
+}
+
+/* Section Styles */
+
+/* Header */
+.main-nav {
+  width: 100%;
+  background: #00081C;
+  min-height: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+  margin: 5px;
+  background: #243C40;
+  border-radius: 20px;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+.nav li:hover {
+  border-bottom: 2px solid #ccc;
+}
+
+.main-nav .name {
+  display: block;
+  font-size: 2em;
+  letter-spacing: 0.5em;
+  background-color: #00081C;
+  color: #B8C8D4;
+  padding: 0 20px;
+}
+
+.banner {
+  background-image: linear-gradient(#00081C,#2E2645 20%,#2E2645 80%,#00081C);
+  margin: -1px;
+  padding: 30px;
+}
+
+.profile-image {
+  max-width: 80%;
+  margin: 20px auto;
+  box-shadow: 0px 0px 3px 3px #24182B;
+  border-radius: 20px;
+}
+
+.intro {
+  margin: 15px auto;
+  padding: 5px;
+  font-size: 1.1em;
+  color: #6FB6AD;
+  line-height: 1.5em;
+}
+
+
+/* body */
+main {
+  margin: 2%;
+  text-align: center;
+}
+
+.nav-title {
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex {
+  background: #2E2645;
+  box-shadow: 0px 0px 3px 3px #020305;
+  border-radius: 20px;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #DBA77F;
+}
+
+.info {
+  padding: 5px 2px;
+  margin: 5px;
+
+}
+
+.skills,
+.contact {
+  background-image: radial-gradient(circle,#8584B0,#6FB6AD 90%);
+  box-shadow: 0px 0px 3px 3px #020305;
+  padding: 10px;
+  color: #2E2645;
+  margin: 25px 0;
+}
+
+.list-skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #90D4A9;
+  color: #6B5338;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.list-skills li:nth-child(odd) {
+  background: #D4B090;
+}
+
+.list-contacts li {
+  line-height: 2em;
+  background-color: #2E2645;
+  margin: 5px;
+  color: #51857E;
+}
+
+.list-contacts a {
+  font-weight: 700;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  min-height: calc(100vh-89px);
+  padding: 20px;
+  background-image: linear-gradient(#00081C,#2E2645 20%);
+  color: #6FB6AD;
+}
+
+footer .name {
+  float: left;
+  padding: 25px;
+  font-size: 1.1em;
+}
+
+.backtotop {
+  float: right;
+  padding: 25px;
+  padding-bottom: 2px;
+}
+
+.backtotop a:hover {
+  border-bottom: 2px solid #ccc;
+}
+
+.footer-nav li {
+    display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* media queries */
+
+@media (min-width: 768px) {
+
+  .nav li {
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .banner {
+    padding: 80px 30px;
+  }
+
+  .profile-image {
+    width: 40%;
+    float: right;
+  }
+
+  .intro {
+    text-align: left;
+    width: 55%;
+    float: left;
+  }
+
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex {
+    max-width: 45%;
+    margin: 15px;
+  }
+
+.skills,
+.contact {
+  margin: 30px 0;
+}
+
+  .backtotop {
+    display: none;
+  }
+
+  .footer-nav li{
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .footer-nav {
+      float: right;
+  }
+
+  .footer-nav a:hover {
+    border-bottom: 2px solid #ccc;
+  }
+}
+@media (min-width: 1024px) {
+
+  main {
+    margin: 10%;
+    margin-top: 3%;
+  }
+
+  .main-nav .name {
+    float: left;
+  }
+
+  .nav {
+    float: right;
+  }
+
+  .flex {
+    max-width: 30%;
+    margin: 13px;
+  }
+}
